@@ -20,7 +20,7 @@ The following methods are available, in addition to those provided by the \link[
 
 \section{Details}{
 
-Initializing a new object of this class can either retrieve an existing ACI resource, or create a new resource on the host. Generally, the best way to initialize an object is via the \code{get_aci}, \code{create_aci} or \code{list_acis} methods of the \link{az_resource_group} class, which handle the details automatically.
+Initializing a new object of this class can either retrieve an existing ACI resource, or create a new resource on the host. Generally, the best way to initialize an object is via the \code{get_aci}, \code{create_aci} or \code{list_acis} methods of the \link[AzureRMR:az_resource_group]{AzureRMR::az_resource_group} class, which handle the details automatically.
 }
 
 \examples{
@@ -40,8 +40,8 @@ myaci$restart()
 \seealso{
 \link{acr}, \link{aks}
 
-\href{https://docs.microsoft.com/en-us/azure/container-instances/}{ACI documentation} and
-\href{https://docs.microsoft.com/en-us/rest/api/container-instances/}{API reference}
+\href{https://learn.microsoft.com/en-us/azure/container-instances/}{ACI documentation} and
+\href{https://learn.microsoft.com/en-us/rest/api/container-instances/}{API reference}
 
 \href{https://docs.docker.com/engine/reference/commandline/cli/}{Docker commandline reference}
 }

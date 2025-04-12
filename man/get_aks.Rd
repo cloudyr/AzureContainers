@@ -8,9 +8,11 @@
 Method for the \link[AzureRMR:az_resource_group]{AzureRMR::az_resource_group} class.
 }
 \section{Usage}{
-\preformatted{get_aks(name)
+
+
+\if{html}{\out{<div class="sourceCode">}}\preformatted{get_aks(name)
 list_aks()
-}
+}\if{html}{\out{</div>}}
 }
 
 \section{Arguments}{
@@ -50,8 +52,8 @@ rg$get_aks("mycluster")
 
 \link{kubernetes_cluster} for the cluster endpoint
 
-\href{https://docs.microsoft.com/en-us/azure/aks/}{AKS documentation} and
-\href{https://docs.microsoft.com/en-us/rest/api/aks/}{API reference}
+\href{https://learn.microsoft.com/en-us/azure/aks/}{AKS documentation} and
+\href{https://learn.microsoft.com/en-us/rest/api/aks/}{API reference}
 
 \href{https://kubernetes.io/docs/reference/}{Kubernetes reference}
 }

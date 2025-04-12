@@ -4,7 +4,7 @@
 ![Downloads](https://cranlogs.r-pkg.org/badges/AzureContainers)
 ![R-CMD-check](https://github.com/Azure/AzureContainers/workflows/R-CMD-check/badge.svg)
 
-A package for working with [Azure Container Registry (ACR)](https://azure.microsoft.com/en-us/services/container-registry/), [Azure Kubernetes Service (AKS)](https://azure.microsoft.com/en-us/services/kubernetes-service/) and [Azure Container Instances (ACI)](https://azure.microsoft.com/en-us/services/container-instances/). Extends the Azure Resource Manager interface provided by the [AzureRMR](https://github.com/Azure/AzureRMR) package.
+A package for working with [Azure Container Registry (ACR)](https://azure.microsoft.com/en-us/products/container-registry/), [Azure Kubernetes Service (AKS)](https://azure.microsoft.com/en-us/products/kubernetes-service/) and [Azure Container Instances (ACI)](https://azure.microsoft.com/en-us/products/container-instances/). Extends the Azure Resource Manager interface provided by the [AzureRMR](https://github.com/Azure/AzureRMR) package.
 
 AzureContainers lets you build and deploy containerised services in R, using Docker and Kubernetes. For full functionality, you should have [Docker](https://docs.docker.com/install/) installed, as well as the [kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl/) and [helm](https://helm.sh/) commandline tools. Otherwise it is relatively lightweight, requiring neither Powershell nor Python.
 

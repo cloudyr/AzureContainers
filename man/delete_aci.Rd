@@ -7,8 +7,10 @@
 Method for the \link[AzureRMR:az_resource_group]{AzureRMR::az_resource_group} class.
 }
 \section{Usage}{
-\preformatted{delete_aci(name, confirm=TRUE, wait=FALSE)
-}
+
+
+\if{html}{\out{<div class="sourceCode">}}\preformatted{delete_aci(name, confirm=TRUE, wait=FALSE)
+}\if{html}{\out{</div>}}
 }
 
 \section{Arguments}{
@@ -41,8 +43,8 @@ rg$delete_aci("mycontainer")
 
 \link{az_container_instance}
 
-\href{https://docs.microsoft.com/en-us/azure/container-instances/}{ACI documentation} and
-\href{https://docs.microsoft.com/en-us/rest/api/container-instances/}{API reference}
+\href{https://learn.microsoft.com/en-us/azure/container-instances/}{ACI documentation} and
+\href{https://learn.microsoft.com/en-us/rest/api/container-instances/}{API reference}
 
 \href{https://docs.docker.com/engine/reference/commandline/cli/}{Docker commandline reference}
 }

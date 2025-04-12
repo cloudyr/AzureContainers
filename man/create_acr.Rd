@@ -7,9 +7,11 @@
 Method for the \link[AzureRMR:az_resource_group]{AzureRMR::az_resource_group} class.
 }
 \section{Usage}{
-\preformatted{create_acr(name, location = self$location,
+
+
+\if{html}{\out{<div class="sourceCode">}}\preformatted{create_acr(name, location = self$location,
            admin_user_enabled = TRUE, sku = "Standard", ...)
-}
+}\if{html}{\out{</div>}}
 }
 
 \section{Arguments}{
@@ -20,13 +22,13 @@ Method for the \link[AzureRMR:az_resource_group]{AzureRMR::az_resource_group} cl
 \item \code{admin_user_enabled}: Whether to enable the Admin user. Currently this must be \code{TRUE} for ACI to pull from the registry.
 \item \code{sku}: Either "Basic", "Standard" (the default) or "Premium".
 \item \code{wait}: Whether to wait until the ACR resource provisioning is complete.
-\item \code{...}: Other named arguments to pass to the \link{az_resource} initialization function.
+\item \code{...}: Other named arguments to pass to the \link[AzureRMR:az_resource]{AzureRMR::az_resource} initialization function.
 }
 }
 
 \section{Details}{
 
-An ACR resource is a Docker registry hosted in Azure. See the \href{https://docs.microsoft.com/en-us/azure/container-registry/}{documentation for the resource} for more information. To work with the registry (transfer images, retag images, etc) see the \link[=docker_registry]{documentation for the registry endpoint}.
+An ACR resource is a Docker registry hosted in Azure. See the \href{https://learn.microsoft.com/en-us/azure/container-registry/}{documentation for the resource} for more information. To work with the registry (transfer images, retag images, etc) see the \link[=docker_registry]{documentation for the registry endpoint}.
 }
 
 \section{Value}{
@@ -52,8 +54,8 @@ rg$create_acr("myregistry")
 
 \link{docker_registry} for the registry endpoint
 
-\href{https://docs.microsoft.com/en-us/azure/container-registry/}{ACR documentation} and
-\href{https://docs.microsoft.com/en-us/rest/api/containerregistry/registries}{API reference}
+\href{https://learn.microsoft.com/en-us/azure/container-registry/}{ACR documentation} and
+\href{https://learn.microsoft.com/en-us/rest/api/containerregistry/registries}{API reference}
 
 \href{https://docs.docker.com/registry/spec/api/}{Docker registry API}
 }

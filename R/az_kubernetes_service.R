@@ -16,7 +16,7 @@
 #' - `update_service_password(name=NULL, duration=NULL, ...)`: Update the password for the service principal used to manage the cluster resources, returning the new password invisibly.  See 'Updating credentials' below.
 #'
 #' @section Details:
-#' Initializing a new object of this class can either retrieve an existing AKS resource, or create a new resource on the host. Generally, the best way to initialize an object is via the `get_aks`, `create_aks` or `list_aks` methods of the [az_resource_group] class, which handle the details automatically.
+#' Initializing a new object of this class can either retrieve an existing AKS resource, or create a new resource on the host. Generally, the best way to initialize an object is via the `get_aks`, `create_aks` or `list_aks` methods of the [AzureRMR::az_resource_group] class, which handle the details automatically.
 #'
 #' Note that this class is separate from the Kubernetes cluster itself. This class exposes methods for working with the Azure resource: updating resource tags, updating and deleting the resource (including updating the Kubernetes version), and so on.
 #'
@@ -39,8 +39,8 @@
 #'
 #' [kubernetes_cluster] for interacting with the cluster endpoint
 #'
-#' [AKS documentation](https://docs.microsoft.com/en-us/azure/aks/) and
-#' [API reference](https://docs.microsoft.com/en-us/rest/api/aks/)
+#' [AKS documentation](https://learn.microsoft.com/en-us/azure/aks/) and
+#' [API reference](https://learn.microsoft.com/en-us/rest/api/aks/)
 #'
 #' @examples
 #' \dontrun{
@@ -212,7 +212,7 @@ public=list(
 #' @seealso
 #' [create_aks], [list_vm_sizes]
 #'
-#' [Agent pool parameters on Microsoft Docs](https://docs.microsoft.com/en-us/rest/api/aks/managedclusters/createorupdate#managedclusteragentpoolprofile)
+#' [Agent pool parameters on Microsoft Docs](https://learn.microsoft.com/en-us/rest/api/aks/managedclusters/createorupdate#managedclusteragentpoolprofile)
 #'
 #' @examples
 #' # pool of 5 Linux GPU-enabled VMs

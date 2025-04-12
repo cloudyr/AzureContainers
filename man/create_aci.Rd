@@ -7,7 +7,9 @@
 Method for the \link[AzureRMR:az_resource_group]{AzureRMR::az_resource_group} class.
 }
 \section{Usage}{
-\preformatted{create_aci(name, location = self$location,
+
+
+\if{html}{\out{<div class="sourceCode">}}\preformatted{create_aci(name, location = self$location,
            container = name, image,
            registry_creds = list(),
            cores = 1, memory = 8,
@@ -16,7 +18,7 @@ Method for the \link[AzureRMR:az_resource_group]{AzureRMR::az_resource_group} cl
            ports = aci_ports(), dns_name = name, public_ip = TRUE,
            restart = c("Always", "OnFailure", "Never"), managed_identity = TRUE,
            ...)
-}
+}\if{html}{\out{</div>}}
 }
 
 \section{Arguments}{
@@ -30,7 +32,7 @@ Method for the \link[AzureRMR:az_resource_group]{AzureRMR::az_resource_group} cl
 \item \code{cores}: The number of CPU cores for the instance.
 \item \code{memory}: The memory size in GB for the instance.
 \item \code{os}: The operating system to run in the instance.
-\item \code{command}: A list of commands to run in the instance. This is similar to the \code{--entrypoint} commandline argument to \verb{docker run}; see \href{https://docs.microsoft.com/en-us/azure/container-instances/container-instances-start-command}{here} for some examples.
+\item \code{command}: A list of commands to run in the instance. This is similar to the \code{--entrypoint} commandline argument to \verb{docker run}; see \href{https://learn.microsoft.com/en-us/azure/container-instances/container-instances-start-command}{here} for some examples.
 \item \code{env_vars}: A list of name-value pairs to set as environment variables in the instance.
 \item \code{secure_env_vars}: A list of name-value pairs to set as \emph{secure} environment variables in the instance. The values of these variables are not visible in the container's properties, eg when viewed in the Azure portal or via the CLI.
 \item \code{ports}: The network ports to open. By default, opens ports 80 and 443. See 'Details'.
@@ -38,13 +40,13 @@ Method for the \link[AzureRMR:az_resource_group]{AzureRMR::az_resource_group} cl
 \item \code{public_ip}: Whether the instance should be publicly accessible.
 \item \code{restart}: Whether to restart the instance should an event occur.
 \item \code{managed_identity}: Whether to assign the container instance a managed identity.
-\item \code{...}: Other named arguments to pass to the \link{az_resource} initialization function.
+\item \code{...}: Other named arguments to pass to the \link[AzureRMR:az_resource]{AzureRMR::az_resource} initialization function.
 }
 }
 
 \section{Details}{
 
-An ACI resource is a running container hosted in Azure. See the \href{https://docs.microsoft.com/en-us/azure/container-instances/}{documentation for the resource} for more information. Currently ACI only supports a single image in an instance.
+An ACI resource is a running container hosted in Azure. See the \href{https://learn.microsoft.com/en-us/azure/container-instances/}{documentation for the resource} for more information. Currently ACI only supports a single image in an instance.
 
 To supply the registry authentication credentials, the \code{registry_creds} argument should contain either an \link[=acr]{ACR} object, a \link{docker_registry} object, or the result of a call to the \link{aci_creds} function.
 
@@ -77,8 +79,8 @@ rg$create_aci("mycontainer",
 
 \link{az_container_instance}
 
-\href{https://docs.microsoft.com/en-us/azure/container-instances/}{ACI documentation} and
-\href{https://docs.microsoft.com/en-us/rest/api/container-instances/}{API reference}
+\href{https://learn.microsoft.com/en-us/azure/container-instances/}{ACI documentation} and
+\href{https://learn.microsoft.com/en-us/rest/api/container-instances/}{API reference}
 
 \href{https://docs.docker.com/engine/reference/commandline/cli/}{Docker commandline reference}
 }

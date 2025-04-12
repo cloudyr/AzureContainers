@@ -7,14 +7,16 @@
 Method for the \link[AzureRMR:az_resource_group]{AzureRMR::az_resource_group} class.
 }
 \section{Usage}{
-\preformatted{create_aks(name, location = self$location,
+
+
+\if{html}{\out{<div class="sourceCode">}}\preformatted{create_aks(name, location = self$location,
            dns_prefix = name, kubernetes_version = NULL,
            enable_rbac = FALSE, agent_pools = agent_pool("pool1", 3),
            login_user = "", login_passkey = "",
            cluster_service_principal = NULL, managed_identity = TRUE,
            private_cluster = FALSE,
            properties = list(), ..., wait = TRUE)
-}
+}\if{html}{\out{</div>}}
 }
 
 \section{Arguments}{
@@ -42,7 +44,7 @@ An AKS resource is a Kubernetes cluster hosted in Azure. See the \link[=aks]{doc
 
 The nodes for an AKS cluster are organised into \emph{agent pools}, also known as \emph{node pools}, which are homogenous groups of virtual machines. To specify the details for a single agent pool, use the \code{agent_pool} function, which returns an S3 object of that class. To specify the details for multiple pools, you can supply a list of such objects, or a single call to the \code{aks_pools} function; see the examples below. Note that \code{aks_pools} is older, and does not support all the possible parameters for an agent pool.
 
-Of the agent pools in a cluster, at least one must be a \emph{system pool}, which is used to host critical system pods such as CoreDNS and tunnelfront. If you specify more than one pool, the first pool will be treated as the system pool. Note that there are certain \href{https://docs.microsoft.com/en-us/azure/aks/use-system-pools}{extra requirements} for the system pool.
+Of the agent pools in a cluster, at least one must be a \emph{system pool}, which is used to host critical system pods such as CoreDNS and tunnelfront. If you specify more than one pool, the first pool will be treated as the system pool. Note that there are certain \href{https://learn.microsoft.com/en-us/azure/aks/use-system-pools}{extra requirements} for the system pool.
 
 An AKS cluster requires an identity to manage the low-level resources it uses, such as virtual machines and networks. The default and recommended method is to use a \emph{managed identity}, in which all the details of this process are handled by AKS. In AzureContainers version 1.2.1 and older, a \emph{service principal} was used instead, which is an older and less automated method. By setting \code{managed_identity=FALSE}, you can continue using a service principal instead of a managed identity.
 
@@ -85,8 +87,8 @@ rg$create_aks("mycluster",
 
 \link{kubernetes_cluster} for the cluster endpoint
 
-\href{https://docs.microsoft.com/en-us/azure/aks/}{AKS documentation} and
-\href{https://docs.microsoft.com/en-us/rest/api/aks/}{API reference}
+\href{https://learn.microsoft.com/en-us/azure/aks/}{AKS documentation} and
+\href{https://learn.microsoft.com/en-us/rest/api/aks/}{API reference}
 
 \href{https://kubernetes.io/docs/reference/}{Kubernetes reference}
 }

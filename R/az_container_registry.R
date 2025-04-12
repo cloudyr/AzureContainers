@@ -13,7 +13,7 @@
 #' - `get_docker_registry(username, password)`: Return an object representing the Docker registry endpoint.
 #'
 #' @section Details:
-#' Initializing a new object of this class can either retrieve an existing registry resource, or create a new registry on the host. Generally, the best way to initialize an object is via the `get_acr`, `create_acr` or `list_acrs` methods of the [az_resource_group] class, which handle the details automatically.
+#' Initializing a new object of this class can either retrieve an existing registry resource, or create a new registry on the host. Generally, the best way to initialize an object is via the `get_acr`, `create_acr` or `list_acrs` methods of the [AzureRMR::az_resource_group] class, which handle the details automatically.
 #'
 #' Note that this class is separate from the Docker registry itself. This class exposes methods for working with the Azure resource: listing credentials, updating resource tags, updating and deleting the resource, and so on.
 #'
@@ -29,8 +29,8 @@
 #'
 #' [docker_registry] for interacting with the Docker registry endpoint
 #'
-#' [Azure Container Registry](https://docs.microsoft.com/en-us/azure/container-registry/) and
-#' [API reference](https://docs.microsoft.com/en-us/rest/api/containerregistry/registries)
+#' [Azure Container Registry](https://learn.microsoft.com/en-us/azure/container-registry/) and
+#' [API reference](https://learn.microsoft.com/en-us/rest/api/containerregistry/registries)
 #'
 #' @examples
 #' \dontrun{

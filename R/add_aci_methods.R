@@ -26,7 +26,7 @@
 #' - `cores`: The number of CPU cores for the instance.
 #' - `memory`: The memory size in GB for the instance.
 #' - `os`: The operating system to run in the instance.
-#' - `command`: A list of commands to run in the instance. This is similar to the `--entrypoint` commandline argument to `docker run`; see [here](https://docs.microsoft.com/en-us/azure/container-instances/container-instances-start-command) for some examples.
+#' - `command`: A list of commands to run in the instance. This is similar to the `--entrypoint` commandline argument to `docker run`; see [here](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-start-command) for some examples.
 #' - `env_vars`: A list of name-value pairs to set as environment variables in the instance.
 #' - `secure_env_vars`: A list of name-value pairs to set as _secure_ environment variables in the instance. The values of these variables are not visible in the container's properties, eg when viewed in the Azure portal or via the CLI.
 #' - `ports`: The network ports to open. By default, opens ports 80 and 443. See 'Details'.
@@ -34,10 +34,10 @@
 #' - `public_ip`: Whether the instance should be publicly accessible.
 #' - `restart`: Whether to restart the instance should an event occur.
 #' - `managed_identity`: Whether to assign the container instance a managed identity.
-#' - `...`: Other named arguments to pass to the [az_resource] initialization function.
+#' - `...`: Other named arguments to pass to the [AzureRMR::az_resource] initialization function.
 #'
 #' @section Details:
-#' An ACI resource is a running container hosted in Azure. See the [documentation for the resource](https://docs.microsoft.com/en-us/azure/container-instances/) for more information. Currently ACI only supports a single image in an instance.
+#' An ACI resource is a running container hosted in Azure. See the [documentation for the resource](https://learn.microsoft.com/en-us/azure/container-instances/) for more information. Currently ACI only supports a single image in an instance.
 #'
 #' To supply the registry authentication credentials, the `registry_creds` argument should contain either an [ACR][acr] object, a [docker_registry] object, or the result of a call to the [aci_creds] function.
 #'
@@ -51,8 +51,8 @@
 #'
 #' [az_container_instance]
 #'
-#' [ACI documentation](https://docs.microsoft.com/en-us/azure/container-instances/) and
-#' [API reference](https://docs.microsoft.com/en-us/rest/api/container-instances/)
+#' [ACI documentation](https://learn.microsoft.com/en-us/azure/container-instances/) and
+#' [API reference](https://learn.microsoft.com/en-us/rest/api/container-instances/)
 #'
 #' [Docker commandline reference](https://docs.docker.com/engine/reference/commandline/cli/)
 #'
@@ -103,8 +103,8 @@ NULL
 #'
 #' [az_container_instance]
 #'
-#' [ACI documentation](https://docs.microsoft.com/en-us/azure/container-instances/) and
-#' [API reference](https://docs.microsoft.com/en-us/rest/api/container-instances/)
+#' [ACI documentation](https://learn.microsoft.com/en-us/azure/container-instances/) and
+#' [API reference](https://learn.microsoft.com/en-us/rest/api/container-instances/)
 #'
 #' [Docker commandline reference](https://docs.docker.com/engine/reference/commandline/cli/)
 #'
@@ -146,8 +146,8 @@ NULL
 #'
 #' [az_container_instance]
 #'
-#' [ACI documentation](https://docs.microsoft.com/en-us/azure/container-instances/) and
-#' [API reference](https://docs.microsoft.com/en-us/rest/api/container-instances/)
+#' [ACI documentation](https://learn.microsoft.com/en-us/azure/container-instances/) and
+#' [API reference](https://learn.microsoft.com/en-us/rest/api/container-instances/)
 #'
 #' [Docker commandline reference](https://docs.docker.com/engine/reference/commandline/cli/)
 #'

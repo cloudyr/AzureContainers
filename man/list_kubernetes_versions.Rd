@@ -7,12 +7,14 @@
 Method for the \link[AzureRMR:az_subscription]{AzureRMR::az_subscription} and \link[AzureRMR:az_resource_group]{AzureRMR::az_resource_group} classes.
 }
 \section{Usage}{
-\preformatted{## R6 method for class 'az_subscription'
+
+
+\if{html}{\out{<div class="sourceCode">}}\preformatted{## R6 method for class 'az_subscription'
 list_kubernetes_versions(location)
 
 ## R6 method for class 'az_resource_group'
 list_kubernetes_versions()
-}
+}\if{html}{\out{</div>}}
 }
 
 \section{Arguments}{

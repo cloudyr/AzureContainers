@@ -1,3 +1,7 @@
+# AzureContainers 1.3.3
+
+- Updated web links for CRAN
+
 # AzureContainers 1.3.2
 
 - Add a `secure_env_vars` argument to the `create_aci()` method, to set secure environment variables in the instance.  The values of these variables are not visible in the container's properties, eg when viewed in the Azure portal or via the CLI.
@@ -42,7 +46,7 @@
 
 # AzureContainers 1.1.1
 
-* Enable creating ACI and AKS instances with assigned managed identities. Note that this is still in preview for AKS; see the [Microsoft Docs page](https://docs.microsoft.com/en-us/azure/aks/use-managed-identity) for enabling this feature.
+* Enable creating ACI and AKS instances with assigned managed identities. Note that this is still in preview for AKS; see the [Microsoft Docs page](https://learn.microsoft.com/en-us/azure/aks/use-managed-identity) for enabling this feature.
 
 # AzureContainers 1.1.0
 

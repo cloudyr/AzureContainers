@@ -8,9 +8,11 @@
 Method for the \link[AzureRMR:az_resource_group]{AzureRMR::az_resource_group} class.
 }
 \section{Usage}{
-\preformatted{get_acr(name)
+
+
+\if{html}{\out{<div class="sourceCode">}}\preformatted{get_acr(name)
 list_acrs()
-}
+}\if{html}{\out{</div>}}
 }
 
 \section{Arguments}{
@@ -50,8 +52,8 @@ rg$get_acr("myregistry")
 
 \link{docker_registry} for the registry endpoint
 
-\href{https://docs.microsoft.com/en-us/azure/container-registry/}{ACR documentation} and
-\href{https://docs.microsoft.com/en-us/rest/api/containerregistry/registries}{API reference}
+\href{https://learn.microsoft.com/en-us/azure/container-registry/}{ACR documentation} and
+\href{https://learn.microsoft.com/en-us/rest/api/containerregistry/registries}{API reference}
 
 \href{https://docs.docker.com/registry/spec/api/}{Docker registry API}
 }

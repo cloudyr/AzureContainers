@@ -7,8 +7,10 @@
 Method for the \link[AzureRMR:az_resource_group]{AzureRMR::az_resource_group} class.
 }
 \section{Usage}{
-\preformatted{delete_acr(name, confirm=TRUE, wait=FALSE)
-}
+
+
+\if{html}{\out{<div class="sourceCode">}}\preformatted{delete_acr(name, confirm=TRUE, wait=FALSE)
+}\if{html}{\out{</div>}}
 }
 
 \section{Arguments}{
@@ -43,8 +45,8 @@ rg$delete_acr("myregistry")
 
 \link{docker_registry} for the registry endpoint
 
-\href{https://docs.microsoft.com/en-us/azure/container-registry/}{ACR documentation} and
-\href{https://docs.microsoft.com/en-us/rest/api/containerregistry/registries}{API reference}
+\href{https://learn.microsoft.com/en-us/azure/container-registry/}{ACR documentation} and
+\href{https://learn.microsoft.com/en-us/rest/api/containerregistry/registries}{API reference}
 
 \href{https://docs.docker.com/registry/spec/api/}{Docker registry API}
 }

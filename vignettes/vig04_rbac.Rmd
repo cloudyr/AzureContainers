@@ -167,5 +167,5 @@ rg$create_aks("akswithaad", agent_pools=aks_pools("pool1", 2),
 
 For more information, see the following Microsoft Docs pages:
 
-- [Enable Azure Active Directory integration](https://docs.microsoft.com/en-us/azure/aks/azure-ad-integration)
-- [Use Kubernetes RBAC with Azure AD integration](https://docs.microsoft.com/en-us/azure/aks/azure-ad-rbac)
+- [Enable Azure Active Directory integration](https://learn.microsoft.com/en-us/azure/aks/azure-ad-integration)
+- [Use Kubernetes RBAC with Azure AD integration](https://learn.microsoft.com/en-us/azure/aks/azure-ad-rbac)

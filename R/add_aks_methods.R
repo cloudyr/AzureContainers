@@ -35,7 +35,7 @@
 #'
 #' The nodes for an AKS cluster are organised into _agent pools_, also known as _node pools_, which are homogenous groups of virtual machines. To specify the details for a single agent pool, use the `agent_pool` function, which returns an S3 object of that class. To specify the details for multiple pools, you can supply a list of such objects, or a single call to the `aks_pools` function; see the examples below. Note that `aks_pools` is older, and does not support all the possible parameters for an agent pool.
 #'
-#' Of the agent pools in a cluster, at least one must be a _system pool_, which is used to host critical system pods such as CoreDNS and tunnelfront. If you specify more than one pool, the first pool will be treated as the system pool. Note that there are certain [extra requirements](https://docs.microsoft.com/en-us/azure/aks/use-system-pools) for the system pool.
+#' Of the agent pools in a cluster, at least one must be a _system pool_, which is used to host critical system pods such as CoreDNS and tunnelfront. If you specify more than one pool, the first pool will be treated as the system pool. Note that there are certain [extra requirements](https://learn.microsoft.com/en-us/azure/aks/use-system-pools) for the system pool.
 #'
 #' An AKS cluster requires an identity to manage the low-level resources it uses, such as virtual machines and networks. The default and recommended method is to use a _managed identity_, in which all the details of this process are handled by AKS. In AzureContainers version 1.2.1 and older, a _service principal_ was used instead, which is an older and less automated method. By setting `managed_identity=FALSE`, you can continue using a service principal instead of a managed identity.
 #'
@@ -51,8 +51,8 @@
 #'
 #' [kubernetes_cluster] for the cluster endpoint
 #'
-#' [AKS documentation](https://docs.microsoft.com/en-us/azure/aks/) and
-#' [API reference](https://docs.microsoft.com/en-us/rest/api/aks/)
+#' [AKS documentation](https://learn.microsoft.com/en-us/azure/aks/) and
+#' [API reference](https://learn.microsoft.com/en-us/rest/api/aks/)
 #'
 #' [Kubernetes reference](https://kubernetes.io/docs/reference/)
 #'
@@ -113,8 +113,8 @@ NULL
 #'
 #' [kubernetes_cluster] for the cluster endpoint
 #'
-#' [AKS documentation](https://docs.microsoft.com/en-us/azure/aks/) and
-#' [API reference](https://docs.microsoft.com/en-us/rest/api/aks/)
+#' [AKS documentation](https://learn.microsoft.com/en-us/azure/aks/) and
+#' [API reference](https://learn.microsoft.com/en-us/rest/api/aks/)
 #'
 #' [Kubernetes reference](https://kubernetes.io/docs/reference/)
 #'
@@ -158,8 +158,8 @@ NULL
 #'
 #' [kubernetes_cluster] for the cluster endpoint
 #'
-#' [AKS documentation](https://docs.microsoft.com/en-us/azure/aks/) and
-#' [API reference](https://docs.microsoft.com/en-us/rest/api/aks/)
+#' [AKS documentation](https://learn.microsoft.com/en-us/azure/aks/) and
+#' [API reference](https://learn.microsoft.com/en-us/rest/api/aks/)
 #'
 #' [Kubernetes reference](https://kubernetes.io/docs/reference/)
 #'

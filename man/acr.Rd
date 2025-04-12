@@ -23,7 +23,7 @@ The following methods are available, in addition to those provided by the \link[
 
 \section{Details}{
 
-Initializing a new object of this class can either retrieve an existing registry resource, or create a new registry on the host. Generally, the best way to initialize an object is via the \code{get_acr}, \code{create_acr} or \code{list_acrs} methods of the \link{az_resource_group} class, which handle the details automatically.
+Initializing a new object of this class can either retrieve an existing registry resource, or create a new registry on the host. Generally, the best way to initialize an object is via the \code{get_acr}, \code{create_acr} or \code{list_acrs} methods of the \link[AzureRMR:az_resource_group]{AzureRMR::az_resource_group} class, which handle the details automatically.
 
 Note that this class is separate from the Docker registry itself. This class exposes methods for working with the Azure resource: listing credentials, updating resource tags, updating and deleting the resource, and so on.
 
@@ -68,6 +68,6 @@ myacr$get_docker_registry(as_admin=TRUE)
 
 \link{docker_registry} for interacting with the Docker registry endpoint
 
-\href{https://docs.microsoft.com/en-us/azure/container-registry/}{Azure Container Registry} and
-\href{https://docs.microsoft.com/en-us/rest/api/containerregistry/registries}{API reference}
+\href{https://learn.microsoft.com/en-us/azure/container-registry/}{Azure Container Registry} and
+\href{https://learn.microsoft.com/en-us/rest/api/containerregistry/registries}{API reference}
 }

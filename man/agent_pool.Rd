@@ -53,5 +53,5 @@ agent_pool("vmpool1", 3, use_scaleset=FALSE)
 \seealso{
 \link{create_aks}, \link{list_vm_sizes}
 
-\href{https://docs.microsoft.com/en-us/rest/api/aks/managedclusters/createorupdate#managedclusteragentpoolprofile}{Agent pool parameters on Microsoft Docs}
+\href{https://learn.microsoft.com/en-us/rest/api/aks/managedclusters/createorupdate#managedclusteragentpoolprofile}{Agent pool parameters on Microsoft Docs}
 }

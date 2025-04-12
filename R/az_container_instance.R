@@ -10,13 +10,13 @@
 #' - `stop()`: Stop a container.
 #'
 #' @section Details:
-#' Initializing a new object of this class can either retrieve an existing ACI resource, or create a new resource on the host. Generally, the best way to initialize an object is via the `get_aci`, `create_aci` or `list_acis` methods of the [az_resource_group] class, which handle the details automatically.
+#' Initializing a new object of this class can either retrieve an existing ACI resource, or create a new resource on the host. Generally, the best way to initialize an object is via the `get_aci`, `create_aci` or `list_acis` methods of the [AzureRMR::az_resource_group] class, which handle the details automatically.
 #'
 #' @seealso
 #' [acr], [aks]
 #'
-#' [ACI documentation](https://docs.microsoft.com/en-us/azure/container-instances/) and
-#' [API reference](https://docs.microsoft.com/en-us/rest/api/container-instances/)
+#' [ACI documentation](https://learn.microsoft.com/en-us/azure/container-instances/) and
+#' [API reference](https://learn.microsoft.com/en-us/rest/api/container-instances/)
 #'
 #' [Docker commandline reference](https://docs.docker.com/engine/reference/commandline/cli/)
 #'
